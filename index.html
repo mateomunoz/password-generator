@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="principal-container">
+        <div id="password-container">
+            <input id="password">Genera una contraseña</input>
+        </div>
+        <div class="input-container">
+            <span>6</span>
+            <input type="range" id="lengthSlider" min="6" max="20" value="12">
+            <span>20</span>
+        </div>
+        <div class="options-container" id="options">
+            <div class="input-options-container">
+                <span>Include Uppercase</span>
+                <input type="checkbox" id="uppercase" class="option-input">
+                <label for="uppercase" class="option-label"></label>
+            </div>
+            <div class="input-options-container">
+                <span>Include Lowercase</span>
+                <input type="checkbox" id="lowercase" class="option-input">
+                <label for="lowercase" class="option-label"></label>
+            </div>
+            <div class="input-options-container">
+                <span>Include Numbers</span>
+                <input type="checkbox" id="numbers" class="option-input">
+                <label for="numbers" class="option-label"></label>
+            </div>
+            <div class="input-options-container">
+                <span>Include Symbols</span>
+                <input type="checkbox" id="symbols" class="option-input">
+                <label for="symbols" class="option-label"></label>
+            </div>
+        </div>
+        <div class="controls-container">
+            <button id="button">Generar Contraseña</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
